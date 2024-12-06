@@ -74,7 +74,7 @@ html, body {
 
 a {
   text-decoration: none !important; /* Sin subrayado */
-  color: black !important; /* Color del texto */
+  color: rgb(233, 8, 8) !important; /* Color del texto */
 }
 
 /* Estilos para las tarjetas */
