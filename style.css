@@ -1,0 +1,106 @@
+/* Importa la fuente Roboto desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Estilos de la página*/
+html, body {
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Estilos para la sección del título */
+.title_section {
+    background-image: url(images/developer.png); /* Imagen de fondo */
+    min-height: 100vh; /* Altura mínima del 100% de la ventana */
+    background-position: center; /* Centra la imagen de fondo */
+    background-size: cover; /* Escala la imagen de fondo para cubrir todo el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  }
+
+  .text_container {
+    color: white; /* Color del texto */
+    max-width: 900px; /* Ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    padding-top: 64px; /* Espaciado superior */
+    padding-left: 16px; /* Espaciado izquierdo */
+  }
+  
+  .lg_text {
+    font-size: 72 px; /* Tamaño de fuente */
+    font-weight: 400; /* Grosor de la fuente */
+  }
+
+  .black_box{
+    background-color: #000; /* Color de fondo */
+  padding: 20px;
+}
+
+.black_box h2{
+    font-size: 72px; /* Tamaño de fuente */
+    color: #fff;
+    text-align: center; /* Alineación de texto */
+    font-weight: 300; /* Grosor de la fuente */
+
+}
+
+.black_box h2 span{
+    font-weight: 400; /* Grosor de la fuente */
+    font-size: 96px; /* Tamaño de fuente */
+}
+
+
+/* Sección de trabajos */
+.work {
+  display: grid; /* Grid para alineación */
+  gap: 20px; /* Espacio entre elementos */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Columnas flexibles */
+  max-width: 1100px; /* Ancho máximo */
+  margin: 50px auto; /* Margen superior e inferior y centra el contenedor */
+}
+
+/* Estilos para cada elemento de la cuadrícula */
+.grid_item {
+  display: flex; /* Flexbox para alineación */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Alineación vertical */
+}
+
+a {
+  text-decoration: none !important; /* Sin subrayado */
+  color: black !important; /* Color del texto */
+}
+
+/* Estilos para las tarjetas */
+.card { /* Estilo de fuente */
+  max-width: 320px; /* Ancho máximo */
+  height: 400px; /* Altura fija */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2); /* Sombra de caja */
+  transition: 0.2s ease-in-out; /* Transición suave */
+}
+
+/* Efecto al pasar el ratón sobre las tarjetas */
+.card:hover {
+  transform: scale(1.04); /* Escala la tarjeta */
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3); /* Sombra de caja */
+  transition: 0.2s ease-in-out; /* Transición suave */
+}
+
+/* Contenido de las tarjetas */
+.card_content {
+  text-decoration:none; /* Sin transformación */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Estilos para el título dentro de las tarjetas */
+.card_content h3 {
+
+  margin-bottom: 10px; /* Margen inferior */
+}
